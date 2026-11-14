@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Matchup Comparison - WVEBL</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+</head>
+
+<body>
+
+<p>
+    <a href="index.html">← Home</a>
+</p>
+
+<h1>Matchup Comparison</h1>
+
+<p class="sub">
+    Compare player handicaps and records for any scheduled matchup.
+</p>
+
+<div class="filters">
+
+    <select id="week">
+        <option value="">Select Week</option>
+    </select>
+
+    <select id="matchup">
+        <option value="">Select Matchup</option>
+    </select>
+
+    <select id="sort">
+        <option value="Player">Player</option>
+        <option value="HNDCP">Handicap</option>
+        <option value="%">Win %</option>
+        <option value="Win">Wins</option>
+        <option value="Loss">Losses</option>
+        <option value="BREAK">High Break</option>
+    </select>
+
+</div>
+
+<p id="status">
+Select a week and matchup.
+</p>
+
+<div id="summary"></div>
+
+<div class="table-wrap">
+    <table id="comparison"></table>
+</div>
+
+<script src="js/matchups.js"></script>
+
+</body>
+</html>
