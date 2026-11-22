@@ -330,8 +330,17 @@ function centerBracket(){
     centerMatch("q1","q2","s1");
     centerMatch("q3","q4","s2");
 
-    centerMatch("s1","s2","f1");
+centerMatch("s1","s2","f1");
 
+const finalMatch = document.getElementById("f1");
+const champion = document.querySelector(".champion-section");
+
+if(finalMatch && champion){
+
+    champion.style.position = "relative";
+
+    champion.style.top =
+        finalMatch.style.top;
 }
 
 window.addEventListener("load",()=>{
