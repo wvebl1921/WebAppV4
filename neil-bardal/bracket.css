@@ -7,7 +7,6 @@ body{
 .container{
     max-width:100%;
 }
-
 h1{
     text-align:center;
     color:#003366;
@@ -107,43 +106,6 @@ h1{
 #quarters .match,
 #semis .match{
     margin-bottom:15px;
-}
-/* ==========================
-   ROUND 2
-========================== */
-
-#r1{ margin-top:80px; }
-#r2{ ma*gin-top:145px; }
-#r3{ margin-top:2*0px; }
-#r4{ margin-top:275px; }
-
-#r5{ margin-top:340px; }
-#r6{ margin*top:405px; }
-#r7{ margin-top:470px* }
-#r8{ margin-top:535px; }
-
-/* ==========================
-   QUARTERS
-========================== */
-
-#q1{ margin-top:180px; }
-#q2{ m*rgin-top:520px; }
-#q3{ margin-top:*60px; }
-#q4{ margin-top:1200px; }
-
-/* ==========================
-   SEMIS
-========================== */
-
-#s1{ margin-top:420px; }
-#s2{ margin-top:1120px; }
-
-/* ==========================
-   FINAL
-========================== */
-
-#f1{
-    margin-top:760px;
 }
 
 /* FINAL */
