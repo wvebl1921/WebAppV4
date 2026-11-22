@@ -93,4 +93,128 @@ for (let i = 0; i < 4; i++) {
 
 for (let i = 0; i < 2; i++) {
 
-    document.
+    document.getElementById("semis")
+        .insertAdjacentHTML(
+            "beforeend",
+            createMatch(
+                `s${i + 1}`,
+                "Winner",
+                "Winner"
+            )
+        );
+
+}
+
+document.getElementById("final").innerHTML =
+    createMatch(
+        "f1",
+        "Winner",
+        "Winner"
+    );
+
+/* ==========================
+   WINNER LOGIC
+========================== */
+
+function getWinner(id) {
+
+    const p1 =
+        document.getElementById(id + "p1")
+            ?.textContent.trim();
+
+    const p2 =
+        document.getElementById(id + "p2")
+            ?.textContent.trim();
+
+    if (p1 === "BYE") return p2;
+
+    if (p2 === "BYE") return p1;
+
+    const s1 =
+        parseInt(
+            document.getElementById(id + "s1").value
+        ) || 0;
+
+    const s2 =
+        parseInt(
+            document.getElementById(id + "s2").value
+        ) || 0;
+
+    if (s1 >= RACE_TO && s1 > s2) {
+        return p1;
+    }
+
+    if (s2 >= RACE_TO && s2 > s1) {
+        return p2;
+    }
+
+    return null;
+}
+
+/* ==========================
+   ADVANCEMENT
+========================== */
+
+function setPlayer(id, pos, name) {
+
+    const el =
+        document.getElementById(id + pos);
+
+    if (el && name) {
+        el.textContent = name;
+    }
+
+}
+
+function calculate() {
+
+    /* QUARTER FINALS */
+
+    setPlayer("q1", "p1", getWinner("m1"));
+    setPlayer("q1", "p2", getWinner("m2"));
+
+    setPlayer("q2", "p1", getWinner("m3"));
+    setPlayer("q2", "p2", getWinner("m4"));
+
+    setPlayer("q3", "p1", getWinner("m5"));
+    setPlayer("q3", "p2", getWinner("m6"));
+
+    setPlayer("q4", "p1", getWinner("m7"));
+    setPlayer("q4", "p2", getWinner("m8"));
+
+    /* SEMIS */
+
+    setPlayer("s1", "p1", getWinner("q1"));
+    setPlayer("s1", "p2", getWinner("q2"));
+
+    setPlayer("s2", "p1", getWinner("q3"));
+    setPlayer("s2", "p2", getWinner("q4"));
+
+    /* FINAL */
+
+    setPlayer("f1", "p1", getWinner("s1"));
+    setPlayer("f1", "p2", getWinner("s2"));
+
+    /* CHAMPION */
+
+    const champion =
+        getWinner("f1");
+
+    document.getElementById("championName")
+        .textContent =
+        champion || "TBD";
+}
+
+/* ==========================
+   EVENTS
+========================== */
+
+document.addEventListener(
+    "input",
+    calculate
+);
+
+window.addEventListener(
+    "load",
+    calculate
+);
