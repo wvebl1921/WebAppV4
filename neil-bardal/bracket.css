@@ -62,12 +62,11 @@ h1{
 ========================== */
 
 .bracket-wrapper{
-    transform:scale(0.90);
+    transform:scale(0.80);
     transform-origin:top left;
-    width:115%;
+    width:125%;
     overflow:visible;
 }
-
 .bracket{
     display:flex;
     gap:4px;
