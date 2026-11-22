@@ -1,6 +1,4 @@
 const RACE_TO = 400;
-console.log("bracket.js loaded");
-console.log(PLAYERS);
 
 /* ==========================
    MATCH TEMPLATE
@@ -37,7 +35,7 @@ function createMatch(id,p1,p2,isRound1=false){
                 <div class="handicap">
                     HCP: ${p1.handicap}
                 </div>
-            ` : ""}
+            ` : ``}
 
         </div>
 
@@ -63,19 +61,23 @@ function createMatch(id,p1,p2,isRound1=false){
                 <div class="handicap">
                     HCP: ${p2.handicap}
                 </div>
-            ` : ""}
+            ` : ``}
 
         </div>
 
     </div>
     `;
 }
+
+/* ==========================
+   BUILD BRACKET
+========================== */
+
 for(let i=0;i<16;i++){
 
     document.getElementById("round1")
     .insertAdjacentHTML(
         "beforeend",
-
         createMatch(
             `m${i+1}`,
             PLAYERS[i*2],
@@ -85,12 +87,12 @@ for(let i=0;i<16;i++){
     );
 
 }
+
 for(let i=0;i<8;i++){
 
     document.getElementById("round2")
     .insertAdjacentHTML(
         "beforeend",
-
         createMatch(
             `r${i+1}`,
             "Winner",
@@ -99,12 +101,12 @@ for(let i=0;i<8;i++){
     );
 
 }
+
 for(let i=0;i<4;i++){
 
     document.getElementById("quarters")
     .insertAdjacentHTML(
         "beforeend",
-
         createMatch(
             `q${i+1}`,
             "Winner",
@@ -113,12 +115,12 @@ for(let i=0;i<4;i++){
     );
 
 }
+
 for(let i=0;i<2;i++){
 
     document.getElementById("semis")
     .insertAdjacentHTML(
         "beforeend",
-
         createMatch(
             `s${i+1}`,
             "Winner",
@@ -127,6 +129,7 @@ for(let i=0;i<2;i++){
     );
 
 }
+
 document.getElementById("final")
 .innerHTML =
 createMatch(
@@ -134,9 +137,10 @@ createMatch(
     "Winner",
     "Winner"
 );
-document
-.getElementById("championName")
-.textContent = "TBD";
+
+/* ==========================
+   WINNER LOGIC
+========================== */
 
 function getWinner(id){
 
@@ -147,8 +151,6 @@ function getWinner(id){
     const p2 =
         document.getElementById(id+"p2")
         ?.textContent.trim();
-
-    /* BYE ADVANCEMENT */
 
     if(p1 === "BYE") return p2;
 
@@ -164,14 +166,22 @@ function getWinner(id){
             document.getElementById(id+"s2").value
         ) || 0;
 
-    if(s1 >= 400 && s1 > s2)
+    if(s1 >= RACE_TO && s1 > s2){
         return p1;
+    }
 
-    if(s2 >= 400 && s2 > s1)
+    if(s2 >= RACE_TO && s2 > s1){
         return p2;
+    }
 
     return null;
+
 }
+
+/* ==========================
+   ADVANCEMENT
+========================== */
+
 function setPlayer(id,pos,name){
 
     const el =
@@ -211,9 +221,7 @@ function calculate(){
     setPlayer("r8","p1",getWinner("m15"));
     setPlayer("r8","p2",getWinner("m16"));
 
-
-
-    /* QUARTER FINALS */
+    /* QUARTERS */
 
     setPlayer("q1","p1",getWinner("r1"));
     setPlayer("q1","p2",getWinner("r2"));
@@ -227,8 +235,6 @@ function calculate(){
     setPlayer("q4","p1",getWinner("r7"));
     setPlayer("q4","p2",getWinner("r8"));
 
-
-
     /* SEMIS */
 
     setPlayer("s1","p1",getWinner("q1"));
@@ -237,14 +243,10 @@ function calculate(){
     setPlayer("s2","p1",getWinner("q3"));
     setPlayer("s2","p2",getWinner("q4"));
 
-
-
     /* FINAL */
 
     setPlayer("f1","p1",getWinner("s1"));
     setPlayer("f1","p2",getWinner("s2"));
-
-
 
     /* CHAMPION */
 
@@ -252,23 +254,23 @@ function calculate(){
         getWinner("f1");
 
     document.getElementById(
-    "championName"
-).textContent =
-    champion || "TBD";
-
+        "championName"
+    ).textContent =
+        champion || "TBD";
 }
+
+/* ==========================
+   EVENTS
+========================== */
+
 document.addEventListener(
     "input",
     calculate
 );
+
 window.addEventListener(
     "load",
     ()=>{
-
         calculate();
-
-
     }
 );
-
-
