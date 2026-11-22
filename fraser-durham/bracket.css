@@ -1,0 +1,139 @@
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    padding:20px;
+    background:#f5f5f5;
+}
+
+.container{
+    max-width:100%;
+}
+
+h1{
+    text-align:center;
+    color:#003366;
+}
+
+.subtitle{
+    text-align:center;
+    font-weight:bold;
+}
+
+.button-bar{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.button-bar button{
+    margin:5px;
+    padding:10px 20px;
+    background:#003366;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#progressContainer{
+    margin:20px auto;
+    max-width:800px;
+}
+
+#progressText{
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.progressOuter{
+    background:#ddd;
+    height:24px;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+#progressFill{
+    background:#28a745;
+    width:0%;
+    height:100%;
+    transition:.3s;
+}
+
+.bracket-wrapper{
+    overflow-x:auto;
+    padding-top:20px;
+}
+
+.bracket{
+    display:flex;
+    gap:80px;
+    min-width:1800px;
+}
+
+.round{
+    display:flex;
+    flex-direction:column;
+}
+
+.match{
+    width:240px;
+    background:white;
+    margin-bottom:25px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    overflow:hidden;
+    position:relative;
+}
+
+.match.complete{
+    border:2px solid #28a745;
+}
+
+.match::after{
+    content:"";
+    position:absolute;
+    right:-40px;
+    top:50%;
+    width:40px;
+    border-top:2px solid #999;
+}
+
+.race{
+    background:#f1f1f1;
+    text-align:center;
+    font-size:12px;
+    font-weight:bold;
+    padding:6px;
+}
+
+.player{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px;
+    border-bottom:1px solid #eee;
+}
+
+.player:last-child{
+    border-bottom:none;
+}
+
+.score{
+    width:60px;
+}
+
+.winner{
+    background:#d4edda;
+    font-weight:bold;
+}
+
+.champion-card{
+    width:220px;
+    padding:25px;
+    text-align:center;
+    font-size:20px;
+    background:#ffd700;
+    border:3px solid #cc9900;
+    border-radius:10px;
+    font-weight:bold;
+}
