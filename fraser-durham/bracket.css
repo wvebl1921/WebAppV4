@@ -67,8 +67,8 @@ h1{
 
 .bracket{
     display:flex;
-    gap:80px;
-    min-width:1800px;
+    gap:20px;
+    min-width:1300px;
 }
 
 .round{
