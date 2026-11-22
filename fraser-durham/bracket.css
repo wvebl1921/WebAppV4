@@ -107,21 +107,17 @@ h1{
 /* SEMI FINALS */
 
 #semis{
-    padding-top:185px;
+    padding-top:240px;
 }
 
 #semis .match{
-    margin-bottom:315px;
-}
-
-#semis .match:nth-child(2){
-    margin-top:45px;
+    margin-bottom:420px;
 }
 
 /* FINAL */
 
 #finals{
-    padding-top:385px;
+    padding-top:560px;
 }
 
 /* MATCH BOXES */
