@@ -257,7 +257,10 @@ function calculate(){
     ).textContent =
         champion || "TBD";
 }
-
+setTimeout(
+    centerBracket,
+    50
+);
 /* ==========================
    EVENTS
 ========================== */
@@ -275,7 +278,7 @@ window.addEventListener(
 
         setTimeout(
             centerBracket,
-            100
+            500
         );
 
     }
