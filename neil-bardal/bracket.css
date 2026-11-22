@@ -291,3 +291,25 @@ width:260px;
     }
 
 }
+.player span{
+    flex:1;
+    white-space:normal;
+    font-size:15px;
+    font-weight:600;
+    line-height:1.3;
+}
+
+.phone{
+    font-size:13px;
+    color:#555;
+    padding:2px 4px;
+    line-height:1.3;
+}
+
+.handicap{
+    font-size:13px;
+    font-weight:bold;
+    color:#003366;
+    padding:2px 4px 6px 4px;
+    line-height:1.3;
+}
