@@ -138,3 +138,11 @@ h1{
     border-radius:10px;
     font-weight:bold;
 }
+.champion-round{
+    display:flex;
+    flex-direction:column;
+}
+
+.champion-spacer{
+    height:180px;
+}
