@@ -180,6 +180,7 @@ function setPlayer(id,pos,name){
     }
 
 }
+
 function calculate(){
 
     /* ROUND 2 */
@@ -248,13 +249,15 @@ function calculate(){
     const champion =
         getWinner("f1");
 
-    if(champion){
+    document.getElementById(
+    "championName"
+).textContent =
+    champion || "TBD";
 
-        document.getElementById(
-            "championName"
-        ).textContent = champion;
-
-    }
+setTimeout(
+    centerBracket,
+    50
+);
 
 }
 function centerMatch(topId,bottomId,targetId){
@@ -339,28 +342,8 @@ window.addEventListener(
 
         setTimeout(
             centerBracket,
-            50
+            300
         );
 
     }
 );
-centerMatch("m1","m2","r1");
-centerMatch("m3","m4","r2");
-centerMatch("m5","m6","r3");
-centerMatch("m7","m8","r4");
-
-centerMatch("m9","m10","r5");
-centerMatch("m11","m12","r6");
-centerMatch("m13","m14","r7");
-centerMatch("m15","m16","r8");
-
-centerMatch("r1","r2","q1");
-centerMatch("r3","r4","q2");
-centerMatch("r5","r6","q3");
-centerMatch("r7","r8","q4");
-
-centerMatch("q1","q2","s1");
-centerMatch("q3","q4","s2");
-
-centerMatch("s1","s2","f1");
-
