@@ -7,10 +7,8 @@ body{
 
 .container{
     max-width:100%;
-    transform:scale(1);
-    transform-origin:top center;
 }
-}
+
 h1{
     text-align:center;
     color:#003366;
@@ -68,62 +66,78 @@ h1{
 
 .bracket{
     display:flex;
-    gap:15px;
-    justify-content-center;
-    min-width:auto;
+    gap:20px;
+    justify-content:center;
 }
 
 .round{
     display:flex;
     flex-direction:column;
 }
+
+.round h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* ROUND 1 */
+
+#round1 .match{
+    margin-bottom:15px;
+}
+
 /* QUARTER FINALS */
 
 #quarters{
-    padding-top:120px;
+    padding-top:95px;
 }
 
 #quarters .match{
-    margin-bottom:185px;
+    margin-bottom:140px;
+}
+
+#quarters .match:nth-child(3){
+    margin-top:25px;
+}
+
+#quarters .match:nth-child(4){
+    margin-top:50px;
 }
 
 /* SEMI FINALS */
 
 #semis{
-    padding-top:295px;
+    padding-top:185px;
 }
 
 #semis .match{
-    margin-bottom:420px;
+    margin-bottom:315px;
+}
+
+#semis .match:nth-child(2){
+    margin-top:45px;
 }
 
 /* FINAL */
 
 #finals{
-    padding-top:520px;
+    padding-top:385px;
 }
+
+/* MATCH BOXES */
 
 .match{
     width:260px;
     background:white;
-    margin-bottom:15px;
-    border-radius:8px;
     border:1px solid #ccc;
+    border-radius:8px;
     overflow:hidden;
     position:relative;
+    box-shadow:0 1px 4px rgba(0,0,0,.15);
 }
 
 .match.complete{
     border:2px solid #28a745;
-}
-
-.match::after{
-    content:"";
-    position:absolute;
-    right:-40px;
-    top:50%;
-    width:40px;
-    border-top:2px solid #999;
 }
 
 .race{
@@ -142,17 +156,43 @@ h1{
     border-bottom:1px solid #eee;
 }
 
-.player:last-child{
-    border-bottom:none;
+.player span{
+    flex:1;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
 }
 
 .score{
     width:45px;
+    flex-shrink:0;
+}
+
+.player-wrap{
+    padding:4px;
+    border-bottom:1px solid #eee;
+}
+
+.breaks{
+    width:95%;
+    margin-top:2px;
+    padding:3px;
+    font-size:10px;
 }
 
 .winner{
     background:#d4edda;
     font-weight:bold;
+}
+
+/* CHAMPION */
+
+.champion-section{
+    margin-top:15px;
+}
+
+.champion-section h2{
+    margin-bottom:6px;
 }
 
 .champion-card{
@@ -164,30 +204,4 @@ h1{
     border:3px solid #cc9900;
     border-radius:10px;
     font-weight:bold;
-}
-.champion-round{
-    display:flex;
-    flex-direction:column;
-}
-
-.champion-spacer{
-    height:220px;
-}
-.player-wrap{
-    padding:4px;
-    border-bottom:1px solid #eee;
-}
-
-.breaks{
-    width:95%;
-    margin-top:2px;
-    font-size:10px;
-    padding:2px;
-}
-.champion-section{
-    margin-top:15px;
-}
-.player span{
-    flex:1;
-    white-space:nowrap;
 }
