@@ -1,22 +1,71 @@
 const PLAYERS = [
-"Fraser Durham",
-"Shane Bartelette",
-"Alan Simpson",
-"Richard Urbanik",
-"Steve Kingyens",
-"Jon Miller",
-"Kevin Augusta",
-"Tim Fulcher",
-"Dave Blacklaw",
-"Jules Mortinson",
-"Steve Jones",
-"Marvin Quiambao",
-"Garry Marshall",
-"Henry Salcedo",
-"Guy Smith",
-"Dan Lougheed"
-];
 
+{
+    name:"Fraser Durham",
+    phone:"431-997-1628"
+},
+{
+    name:"Shane Bartelette",
+    phone:"204-237-0015"
+},
+{
+    name:"Alan Simpson",
+    phone:"204-792-6685"
+},
+{
+    name:"Richard Urbanik",
+    phone:"204-661-5923"
+},
+{
+    name:"Steve Kingyens",
+    phone:"204-794-0237"
+},
+{
+    name:"Jon Miller",
+    phone:"204-295-0724"
+},
+{
+    name:"Kevin Augusta",
+    phone:"204-292-8243"
+},
+{
+    name:"Tim Fulcher",
+    phone:"204-955-7133"
+},
+{
+    name:"Dave Blacklaw",
+    phone:"204-771-1277"
+},
+{
+    name:"Jules Mortinson",
+    phone:"204-955-5267"
+},
+{
+    name:"Steve Jones",
+    phone:"204-771-5132"
+},
+{
+    name:"Marvin Quiambao",
+    phone:"204-955-3891"
+},
+{
+    name:"Garry Marshall",
+    phone:"204-801-2891"
+},
+{
+    name:"Henry Salcedo",
+    phone:"204-771-9592"
+},
+{
+    name:"Guy Smith",
+    phone:"204-299-8996"
+},
+{
+    name:"Dan Lougheed",
+    phone:"204-795-1021"
+}
+
+];
 const RACE_TO = 500;
 
 function createMatch(id,p1,p2){
