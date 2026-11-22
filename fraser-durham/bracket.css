@@ -80,27 +80,27 @@ h1{
 /* QUARTER FINALS */
 
 #quarters{
-    padding-top:80px;
+    padding-top:120px;
 }
 
 #quarters .match{
-    margin-bottom:170px;
+    margin-bottom:185px;
 }
 
 /* SEMI FINALS */
 
 #semis{
-    padding-top:250px;
+    padding-top:295px;
 }
 
 #semis .match{
-    margin-bottom:380px;
+    margin-bottom:420px;
 }
 
 /* FINAL */
 
 #finals{
-    padding-top:500px;
+    padding-top:520px;
 }
 
 .match{
