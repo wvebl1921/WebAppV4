@@ -62,9 +62,9 @@ h1{
 ========================== */
 
 .bracket-wrapper{
-    transform:scale(0.90);
+    transform:scale(100);
     transform-origin:top left;
-    width:125%;
+    width:140%;
 }
 
 .bracket{
