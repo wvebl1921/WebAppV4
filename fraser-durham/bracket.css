@@ -273,19 +273,26 @@ h1{
 
 }
 
+/* ==========================
+   PHONE NUMBERS
+========================== */
+
 .phone{
-    font-size:10px;
-    color:#666;
-    margin-top:-2px;
-    margin-bottom:4px;
-    padding-left:4px;
+    font-size:11px;
+    color:#555;
+    padding:2px 6px 4px 6px;
+    line-height:1.2;
+    font-style:italic;
 }
 
 .phone a{
-    color:#666;
+    color:#555;
     text-decoration:none;
 }
 
+.phone a:hover{
+    text-decoration:underline;
+}
 .phone a:hover{
     text-decoration:underline;
 }
