@@ -173,6 +173,17 @@ h1{
 .champion-spacer{
     height:220px;
 }
+.player-wrap{
+    padding:4px;
+    border-bottom:1px solid #eee;
+}
+
+.breaks{
+    width:95%;
+    margin-top:4px;
+    font-size:11px;
+    padding:4px;
+}
 .champion-section{
     margin-top:15px;
 }
