@@ -206,3 +206,63 @@ h1{
     font-weight:bold;
     text-align:center;
 }
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .bracket{
+        overflow-x:auto;
+        display:flex;
+        gap:15px;
+        justify-content:flex-start;
+        padding-bottom:20px;
+    }
+
+    .round{
+        min-width:220px;
+    }
+
+    .match{
+        width:220px;
+    }
+
+    .player span{
+        font-size:12px;
+    }
+
+    .score{
+        width:40px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .subtitle{
+        font-size:14px;
+    }
+
+    .button-bar button{
+        padding:8px 12px;
+        font-size:12px;
+    }
+
+    .champion-card{
+        width:150px;
+        padding:15px;
+    }
+
+    /* Keep desktop positioning untouched */
+
+    #finals{
+        margin-top:0;
+    }
+
+    #final{
+        margin-top:520px;
+    }
+
+}
+
