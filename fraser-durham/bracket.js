@@ -315,43 +315,6 @@ box.value=scores[box.id];
 });
 
 calculate();
-
-}
-
-function clearScores(){
-
-document
-.querySelectorAll(".score")
-.forEach(box=>{
-
-box.value="";
-
-});
-
-localStorage.removeItem(
-"fraser-durham"
-);
-
-location.reload();
-
-}
-
-function resetTournament(){
-
-if(
-confirm(
-"Reset tournament?"
-)
-){
-
-localStorage.removeItem(
-"fraser-durham"
-);
-
-location.reload();
-
-}
-
 }
 
 document.addEventListener(
