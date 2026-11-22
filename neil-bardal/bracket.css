@@ -341,7 +341,7 @@ width:260px;
 ========================== */
 
 .bracket-wrapper{
-    transform:scale(0.75);
+    transform:scale(0.55);
     transform-origin:top left;
     width:133.33%;
 }
