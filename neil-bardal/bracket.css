@@ -100,12 +100,16 @@ h1{
     margin-bottom:15px;
 }
 
-/* ROUND 2 */
+#round2 .match{
+    margin-bottom:100px;
+}
 
-#round2 .match,
-#quarters .match,
+#quarters .match{
+    margin-bottom:250px;
+}
+
 #semis .match{
-    margin-bottom:15px;
+    margin-bottom:550px;
 }
 
 /* FINAL */
