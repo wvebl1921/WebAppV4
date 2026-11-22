@@ -88,7 +88,7 @@ h1{
 #quarters,
 #semis,
 #final{
-    width:260px;
+    width:280px;
 }
 }
 .round h2{
@@ -128,7 +128,7 @@ h1{
 ========================== */
 
 .match{
-    width:260px;
+    width:280px;
     background:white;
     border:1px solid #ccc;
     border-radius:8px;
@@ -164,6 +164,7 @@ h1{
     flex:1;
     white-space:nowrap;
     font-size:14px;
+    font-weight:normal;
 }
 
 .score{
@@ -228,7 +229,7 @@ h1{
     display:flex;
     flex-direction:column;
     position:relative;
-    min-width:260px;
+    min-width:280px;
 }
 #round1{
 width:260px;
@@ -307,8 +308,11 @@ width:260px;
 }
 
 .handicap{
+    .handicap{
     font-size:13px;
-    font-weight:bold;
+    color:#003366;
+    font-weight:normal;
+}
     color:#003366;
     padding:2px 4px 6px 4px;
     line-height:1.3;
