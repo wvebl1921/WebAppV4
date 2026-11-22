@@ -254,13 +254,6 @@ width:260px;
         width:220px;
     }
 
-    .player span{
-    flex:1;
-    white-space:nowrap;
-    font-size:14px;
-    font-weight:normal;
-}
-
     .score{
         width:40px;
     }
