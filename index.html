@@ -1,91 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neil Bardal Tournament</title>
 
-<title>WVEBL Mobile</title>
-
-<link rel="stylesheet" href="css/style.css">
-
-<link rel="manifest" href="manifest.json">
-
-<link rel="apple-touch-icon"
-      href="icons/christmas-512.png">
-
-<meta name="theme-color"
-      content="#0a5c36">
-
+<link rel="stylesheet" href="bracket.css">
 </head>
 
 <body>
 
-<div style="text-align:center;padding:30px 10px;">
+<div class="container">
 
-    <img src="icons/christmas-512.png"
-         alt="WVEBL Logo"
-         style="width:140px;height:auto;">
+<h1>Neil Bardal Tournament</h1>
 
-    <h1 style="color:#0a5c36;margin-top:10px;">
-        WVEBL Mobile
-    </h1>
+<p class="subtitle">
+32 Slot Handicap Tournament • Race to 400
+</p>
 
-    <p style="color:#666;">
-        Everything League. One Tap Away.
-    </p>
+<div class="button-bar">
+<button onclick="clearScores()">🗑 Clear Scores</button>
+<button onclick="resetTournament()">🔄 Reset Tournament</button>
+</div>
+
+<div id="progressContainer">
+<div id="progressText">
+Tournament Progress: 0 / 31 Matches Complete
+</div>
+
+<div class="progressOuter">
+<div id="progressFill"></div>
+</div>
+</div>
+
+<div class="bracket-wrapper">
+
+<div class="bracket">
+
+<div class="round">
+<h2>Round 1</h2>
+<div id="round1"></div>
+</div>
+
+<div class="round">
+<h2>Round 2</h2>
+<div id="round2"></div>
+</div>
+
+<div class="round">
+<h2>Quarter Finals</h2>
+<div id="quarters"></div>
+</div>
+
+<div class="round">
+<h2>Semi Finals</h2>
+<div id="semis"></div>
+</div>
+
+<div class="round" id="finals">
+
+<h2>Final</h2>
+
+<div id="final"></div>
+
+<div class="champion-section">
+
+<h2>Champion</h2>
+
+<div class="champion-card">
+🏆
+<div id="championName">TBD</div>
+</div>
 
 </div>
 
-<ul class="cards">
+</div>
 
-<li class="card">
-<strong>📅 Schedule</strong>
-<a href="schedule.html">Schedule</a>
-</li>
+</div>
 
-<li class="card">
-<strong>🏆 Handicaps</strong>
-<a href="handicaps.html">Handicaps</a>
-</li>
+</div>
 
-<li class="card">
+</div>
 
-    <strong>
+</div>
 
-        <img src="icons/matchup-balls.png"
-             alt="Matchup Comparison"
-             width="35"
-             style="
-             vertical-align:middle;
-             margin-right:8px;">
+</div>
 
-        Matchup Comparison
-
-    </strong>
-
-    <span>
-        Compare weekly opponents and player statistics.
-    </span>
-
-    <a href="matchups.html">
-        Compare Weekly Matchups
-    </a>
-
-</li>
-
-<li class="card">
-<strong>👥 Executive</strong>
-<a href="executive.html">Executive</a>
-</li>
-
-<li class="card">
-<strong>📞 Contact</strong>
-<a href="contact.html">Contact</a>
-</li>
-
-</ul>
+<script src="players.js"></script>
+<script src="bracket.js"></script>
 
 </body>
 </html>
