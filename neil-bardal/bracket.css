@@ -77,9 +77,9 @@ h1{
 }
 
 .round{
-    display:flex;
-    flex-direction:column;
+    position:relative;
     min-width:280px;
+    min-height:2600px;
 }
 
 .round h2{
@@ -103,20 +103,16 @@ h1{
     margin-bottom:15px;
 }
 
-#round2 .match{
-    margin-bottom:100px;
+#round1 .match{
+    margin-bottom:15px;
 }
 
-#quarters .match{
-    margin-bottom:255px;
-}
-
-#semis .match{
-    margin-bottom:575px;
-}
-
-#final{
-    margin-top:640px;
+#round2 .match,
+#quarters .match,
+#semis .match,
+#final .match{
+    position:absolute;
+    left:0;
 }
 
 /* ROUND 1 */
