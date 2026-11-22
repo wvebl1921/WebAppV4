@@ -269,10 +269,6 @@ window.addEventListener(
     }
 );
 
-window.addEventListener(
-    "resize",
-    centerBracket
-);
 #round1 .match{
     margin-bottom:15px;
 }
