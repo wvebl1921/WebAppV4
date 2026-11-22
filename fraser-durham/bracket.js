@@ -25,15 +25,36 @@ return `
 <div class="match" id="${id}">
 <div class="race">Race to 500</div>
 
+<div class="player-wrap">
+
 <div class="player">
 <span id="${id}p1">${p1}</span>
 <input class="score" id="${id}s1" type="number">
 </div>
 
+<input
+    type="text"
+    class="breaks"
+    id="${id}b1"
+    placeholder="Breaks: 30,34,56"
+/>
+
+</div>
+
+<div class="player-wrap">
+
 <div class="player">
 <span id="${id}p2">${p2}</span>
 <input class="score" id="${id}s2" type="number">
 </div>
+
+<input
+    type="text"
+    class="breaks"
+    id="${id}b2"
+    placeholder="Breaks: 30,34,56"
+/>
+
 </div>
 `;
 
