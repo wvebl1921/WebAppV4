@@ -249,7 +249,6 @@ h1{
     .round{
     display:flex;
     flex-direction:column;
-    position:relative;
     min-width:280px;
 }
 #round1{
