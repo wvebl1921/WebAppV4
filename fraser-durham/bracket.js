@@ -68,7 +68,7 @@ const PLAYERS = [
 ];
 const RACE_TO = 500;
 
-function createMatch(id,p1,p2){
+function createMatch(id,p1,p2,isRound1=false){
 
 return `
 <div class="match" id="${id}">
