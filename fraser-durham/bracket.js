@@ -315,8 +315,15 @@ function centerMatch(topId,bottomId,targetId){
 
     target.style.position = "relative";
 
-    target.style.top =
-        (desiredCenter - targetCenter) + "px";
+    const currentTop =
+parseInt(target.dataset.originalTop || 0);
+
+if(!target.dataset.originalTop){
+    target.dataset.originalTop = currentTop;
+}
+
+target.style.top =
+(currentTop + (desiredCenter - targetCenter)) + "px";
 
 }
 
@@ -330,26 +337,10 @@ function centerBracket(){
     centerMatch("q1","q2","s1");
     centerMatch("q3","q4","s2");
 
-centerMatch("s1","s2","f1");
+    centerMatch("s1","s2","f1");
 
-// Keep Final visible
-document.getElementById("f1").style.top =
-Math.max(
-    parseInt(document.getElementById("f1").style.top || 0),
-    0
-) + "px";
-
-const finalMatch = document.getElementById("f1");
-const champion = document.querySelector(".champion-section");
-
-if(finalMatch && champion){
-
-    champion.style.position = "relative";
-
-    champion.style.top =
-        finalMatch.style.top;
 }
-
+}
 window.addEventListener("load",()=>{
 
     loadScores();
