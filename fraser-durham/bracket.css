@@ -183,3 +183,23 @@ h1{
 /* ==========================
    CHAMPION
 ==========================
+.champion-section{
+    position:relative;
+    top:40px;
+    text-align:center;
+}
+
+.champion-section h2{
+    margin-bottom:10px;
+}
+
+.champion-card{
+    width:180px;
+    margin:0 auto;
+    padding:20px;
+    background:#ffd700;
+    border:3px solid #cc9900;
+    border-radius:10px;
+    font-weight:bold;
+    text-align:center;
+}
