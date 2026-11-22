@@ -104,19 +104,15 @@ h1{
 /* ROUND 2 */
 
 #round2 .match{
-    margin-bottom:140px;
+    margin-bottom:20px;
 }
-
-/* QUARTERS */
 
 #quarters .match{
-    margin-bottom:330px;
+    margin-bottom:20px;
 }
 
-/* SEMIS */
-
 #semis .match{
-    margin-bottom:760px;
+    margin-bottom:20px;
 }
 
 /* FINAL */
