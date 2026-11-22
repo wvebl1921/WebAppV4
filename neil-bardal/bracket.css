@@ -64,7 +64,7 @@ h1{
 .bracket-wrapper{
     transform:scale(0.75);
     transform-origin:top left;
-    width:100%;
+    width:133%;
     overflow:hidden;
 }
 
@@ -81,30 +81,17 @@ h1{
     min-height:2500px;
 }
 
-.round h2{
-    text-align:center;
-    margin-bottom:15px;
-}
-
 #round1,
 #round2,
 #quarters,
 #semis,
 #final{
-    width:280px;
+    width:250px;
 }
 
 /* ==========================
    ROUND SPACING
 ========================== */
-
-#round1 .match{
-    margin-bottom:15px;
-}
-
-#round1 .match{
-    margin-bottom:15px;
-}
 
 /* ROUND 1 */
 
@@ -210,7 +197,7 @@ h1{
 }
 
 .champion-card{
-    width:280px;
+    width:250px;
     margin:0 auto;
     padding:20px;
     background:#ffd700;
@@ -225,12 +212,6 @@ h1{
 ===================================== */
 
 @media (max-width:768px){
-
-    .bracket-wrapper{
-        transform:none;
-        width:auto;
-    }
-
 }
     .round{
     display:flex;
