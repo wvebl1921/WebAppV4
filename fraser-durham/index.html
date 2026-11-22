@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fraser Durham Tournament</title>
+
+<link rel="stylesheet" href="bracket.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Fraser Durham Tournament</h1>
+
+<p class="subtitle">
+16 Players • Single Elimination • Race to 500
+</p>
+
+<div class="button-bar">
+<button onclick="clearScores()">🗑 Clear Scores</button>
+<button onclick="resetTournament()">🔄 Reset Tournament</button>
+</div>
+
+<div id="progressContainer">
+<div id="progressText">
+Tournament Progress: 0 / 15 Matches Complete
+</div>
+
+<div class="progressOuter">
+<div id="progressFill"></div>
+</div>
+</div>
+
+<div class="bracket-wrapper">
+
+<div class="bracket">
+
+<div class="round">
+<h2>Round 1</h2>
+<div id="round1"></div>
+</div>
+
+<div class="round">
+<h2>Quarter Finals</h2>
+<div id="quarters"></div>
+</div>
+
+<div class="round">
+<h2>Semi Finals</h2>
+<div id="semis"></div>
+</div>
+
+<div class="round">
+<h2>Final</h2>
+<div id="final"></div>
+</div>
+
+<div class="round">
+<h2>Champion</h2>
+
+<div class="champion-card">
+🏆
+<div id="championName">TBD</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="bracket.js"></script>
+
+</body>
+</html>
