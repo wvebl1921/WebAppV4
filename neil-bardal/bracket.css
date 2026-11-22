@@ -111,8 +111,7 @@ h1{
 #quarters .match,
 #semis .match,
 #final .match{
-    position:absolute;
-    left:0;
+   left:0;
 }
 
 /* ROUND 1 */
