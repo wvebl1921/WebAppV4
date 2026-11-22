@@ -337,7 +337,7 @@ function centerBracket(){
     centerMatch("q1","q2","s1");
     centerMatch("q3","q4","s2");
 
-    centerMatch("s1","s2","f1");
+    /* Final positioned manually */
 
 }
 
