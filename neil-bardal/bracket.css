@@ -22,16 +22,6 @@ h1{
     margin-bottom:20px;
 }
 
-.button-bar button{
-    margin:5px;
-    padding:10px 20px;
-    background:#003366;
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-}
-
 #progressContainer{
     margin:20px auto;
     max-width:800px;
