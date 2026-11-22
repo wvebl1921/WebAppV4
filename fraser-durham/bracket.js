@@ -136,7 +136,8 @@ document.getElementById("round1")
 createMatch(
 `m${i+1}`,
 PLAYERS[i*2],
-PLAYERS[i*2+1]
+PLAYERS[i*2+1],
+true
 )
 );
 
