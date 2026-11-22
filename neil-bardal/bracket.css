@@ -103,22 +103,16 @@ h1{
 
 /* ROUND 2 */
 
-#round2 .match{
-    margin-bottom:110px;
-}
-
-#quarters .match{
-    margin-bottom:270px;
-}
-
+#round2 .match,
+#quarters .match,
 #semis .match{
-    margin-bottom:620px;
+    margin-bottom:15px;
 }
 
 /* FINAL */
 
 #final{
-    margin-top:700px;
+    margin-top:0px;
 }
 
 
@@ -305,3 +299,40 @@ width:260px;
     padding:2px 4px 6px 4px;
     line-height:1.3;
 }
+/* ==========================
+   ROUND 2 POSITIONING
+========================== */
+
+#r1 { margin-top: 85px; }
+#r2 { margin-top: 145px; }
+#r3 { margin-top: 205px; }
+#r4 { margin-top: 265px; }
+
+#r5 { margin-top: 325px; }
+#r6 { margin-top: 385px; }
+#r7 { margin-top: 445px; }
+#r8 { margin-top: 505px; }
+
+/* ==========================
+   QUARTERS
+========================== */
+
+#q1 { margin-top: 150px; }
+#q2 { margin-top: 430px; }
+#q3 { margin-top: 710px; }
+#q4 { margin-top: 990px; }
+
+/* ==========================
+   SEMIS
+========================== */
+
+#s1 { margin-top: 360px; }
+#s2 { margin-top: 940px; }
+
+/* ==========================
+   FINAL
+========================== */
+
+#f1 { margin-top: 650px; }
+
+
