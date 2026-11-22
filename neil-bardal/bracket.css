@@ -210,8 +210,10 @@ h1{
 ========================== */
 
 .champion-section{
+    top:1400px;
+    left:0;
+    width:280px;
     text-align:center;
-    margin-top:30px;
 }
 
 .champion-section h2{
@@ -296,8 +298,9 @@ width:260px;
     /* Keep desktop positioning untouched */
 
     #finals{
-        margin-top:0;
-    }
+    position:relative;
+    min-height:2600px;
+}
 
     #final{
         margin-top:520px;
