@@ -105,21 +105,21 @@ h1{
 /* ROUND 2 */
 
 #round2 .match{
-    margin-bottom:20px;
+    margin-bottom:110px;
 }
 
 #quarters .match{
-    margin-bottom:20px;
+    margin-bottom:270px;
 }
 
 #semis .match{
-    margin-bottom:20px;
+    margin-bottom:620px;
 }
 
 /* FINAL */
 
 #final{
-    margin-top:820px;
+    margin-top:700px;
 }
 
 
