@@ -209,9 +209,7 @@ h1{
 ========================== */
 
 .champion-section{
-    top:1400px;
-    left:0;
-    width:280px;
+    margin-top:180px;
     text-align:center;
 }
 
