@@ -78,7 +78,7 @@ h1{
 .round{
     position:relative;
     min-width:250px;
-    min-height:3200px;
+    min-height:2800px;
 }
 
 .round h2{
@@ -194,7 +194,7 @@ h1{
 ========================== */
 
 .champion-section{
-    margin-top:15px;
+    margin-top:5px;
     text-align:center;
     width:250px;
 }
