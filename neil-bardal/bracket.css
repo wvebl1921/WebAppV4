@@ -72,63 +72,60 @@ h1{
 
 .bracket{
     display:flex;
-*   gap:40px;
+    gap:40px;
     justify-content:flex-start;
     align-items:flex-start;
     min-width:max-content;
 }
-``*
 
 .round{
     display:flex;
     flex-direction:column;
     position:relative;
+    min-width:260px;
 }
-
+#round1,
+#round2,
+#quarters,
+#semis,
+#final{
+    width:260px;
+}
 .round h2{
     text-align:center;
     margin-bottom:15px;
 }
 
-/* ==========================
-   ROUND 1
-========================== */
+/* ROUND 1 */
 
 #round1 .match{
     margin-bottom:15px;
 }
 
-/* ==========================
-   ROUND 2
-========================== */
+/* ROUND 2 */
 
 #round2 .match{
-    margin-bottom:110px;
+    margin-bottom:140px;
 }
 
-/* ==========================
-   QUARTERS
-========================== */
+/* QUARTERS */
 
 #quarters .match{
-    margin-bottom:260px;
+    margin-bottom:330px;
 }
 
-/* ==========================
-   SEMIS
-========================== */
+/* SEMIS */
 
 #semis .match{
-    margin-bottom:560px;
+    margin-bottom:760px;
 }
 
-/* ==========================
-   FINAL
-========================== */
+/* FINAL */
 
 #final{
-    margin-top:620px;
+    margin-top:820px;
 }
+
 
 /* ==========================
    MATCHES
