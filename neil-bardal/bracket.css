@@ -90,7 +90,6 @@ h1{
 #final{
     width:280px;
 }
-}
 .round h2{
     text-align:center;
     margin-bottom:15px;
@@ -256,8 +255,11 @@ width:260px;
     }
 
     .player span{
-        font-size:12px;
-    }
+    flex:1;
+    white-space:nowrap;
+    font-size:14px;
+    font-weight:normal;
+}
 
     .score{
         width:40px;
@@ -292,13 +294,6 @@ width:260px;
     }
 
 }
-.player span{
-    flex:1;
-    white-space:normal;
-    font-size:15px;
-    font-weight:600;
-    line-height:1.3;
-}
 
 .phone{
     font-size:13px;
@@ -307,10 +302,11 @@ width:260px;
 }
 
 .handicap{
-    .handicap{
     font-size:13px;
     color:#003366;
     font-weight:normal;
+    padding:2px 4px 6px 4px;
+    line-height:1.3;
 }
     color:#003366;
     padding:2px 4px 6px 4px;
