@@ -70,7 +70,7 @@ h1{
 
 .bracket{
     display:flex;
-    gap:40px;
+    gap:15px;
     justify-content:flex-start;
     align-items:flex-start;
     min-width:max-content;
