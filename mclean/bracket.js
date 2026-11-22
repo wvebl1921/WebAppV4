@@ -205,7 +205,77 @@ function calculate() {
         champion || "TBD";
 
 }
+/* ==========================
+   CENTERING
+========================== */
 
+function centerMatch(topId,bottomId,targetId){
+
+    const top =
+        document.getElementById(topId);
+
+    const bottom =
+        document.getElementById(bottomId);
+
+    const target =
+        document.getElementById(targetId);
+
+    if(!top || !bottom || !target){
+        return;
+    }
+
+    const topCenter =
+        top.offsetTop +
+        (top.offsetHeight / 2);
+
+    const bottomCenter =
+        bottom.offsetTop +
+        (bottom.offsetHeight / 2);
+
+    target.style.position = "absolute";
+
+    target.style.top =
+        (
+            ((topCenter + bottomCenter) / 2)
+            - (target.offsetHeight / 2)
+        ) + "px";
+
+}
+
+function centerBracket(){
+
+    centerMatch("m1","m2","q1");
+    centerMatch("m3","m4","q2");
+    centerMatch("m5","m6","q3");
+    centerMatch("m7","m8","q4");
+
+    centerMatch("q1","q2","s1");
+    centerMatch("q3","q4","s2");
+
+    centerMatch("s1","s2","f1");
+
+    positionChampion();
+
+}
+
+function positionChampion(){
+
+    const finalMatch =
+        document.getElementById("f1");
+
+    const champion =
+        document.querySelector(".champion-section");
+
+    if(!finalMatch || !champion){
+        return;
+    }
+
+    champion.style.position = "absolute";
+
+    champion.style.top =
+        (finalMatch.offsetTop + 215) + "px";
+
+}
 /* ==========================
    EVENTS
 ========================== */
