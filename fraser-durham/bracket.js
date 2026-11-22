@@ -36,7 +36,7 @@ return `
     type="text"
     class="breaks"
     id="${id}b1"
-    placeholder="Breaks: 30,34,56"
+    placeholder="Breaks"
 />
 
 </div>
