@@ -184,7 +184,8 @@ h1{
    CHAMPION
 ==========================
 .champion-section{
-    margin-top:25px;
+    position:relative;
+    margin-top:250px;
     text-align:center;
 }
 
