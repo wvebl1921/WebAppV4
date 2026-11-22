@@ -52,7 +52,7 @@ return `
     type="text"
     class="breaks"
     id="${id}b2"
-    placeholder="Breaks: 30,34,56"
+    placeholder="Breaks"
 />
 
 </div>
