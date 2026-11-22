@@ -62,18 +62,17 @@ h1{
 ========================== */
 
 .bracket-wrapper{
-    overflow-x:auto;
-    overflow-y:hidden;
-    -webkit-overflow-scrolling:touch;
-    padding-bottom:15px;
+    transform:scale(0.75);
+    transform-origin:top left;
+    width:125%;
 }
 
 .bracket{
     display:flex;
-    gap:15px;
-    justify-content:flex-start;
+    gap:12px;
+    justify-content:center;
     align-items:flex-start;
-    min-width:max-content;
+    flex-wrap:nowrap;
 }
 
 .round{
