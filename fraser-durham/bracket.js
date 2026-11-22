@@ -332,6 +332,13 @@ function centerBracket(){
 
 centerMatch("s1","s2","f1");
 
+// Keep Final visible
+document.getElementById("f1").style.top =
+Math.max(
+    parseInt(document.getElementById("f1").style.top || 0),
+    0
+) + "px";
+
 const finalMatch = document.getElementById("f1");
 const champion = document.querySelector(".champion-section");
 
