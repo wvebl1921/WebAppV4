@@ -300,6 +300,13 @@ width:260px;
     min-height:2600px;
 }
 
+.champion-section{
+    position:absolute;
+    left:0;
+    width:280px;
+    text-align:center;
+    top:1400px;
+}
     #final{
         margin-top:520px;
     }
