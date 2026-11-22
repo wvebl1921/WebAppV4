@@ -288,4 +288,56 @@ document.addEventListener(
 calculate
 );
 
-loadScores();
+function centerMatch(topId,bottomId,targetId){
+
+    const top =
+        document.getElementById(topId);
+
+    const bottom =
+        document.getElementById(bottomId);
+
+    const target =
+        document.getElementById(targetId);
+
+    if(!top || !bottom || !target) return;
+
+    const topCenter =
+        top.offsetTop + (top.offsetHeight / 2);
+
+    const bottomCenter =
+        bottom.offsetTop + (bottom.offsetHeight / 2);
+
+    const desiredCenter =
+        (topCenter + bottomCenter) / 2;
+
+    const targetCenter =
+        target.offsetTop + (target.offsetHeight / 2);
+
+    target.style.position = "relative";
+
+    target.style.top =
+        (desiredCenter - targetCenter) + "px";
+
+}
+
+function centerBracket(){
+
+    centerMatch("m1","m2","q1");
+    centerMatch("m3","m4","q2");
+    centerMatch("m5","m6","q3");
+    centerMatch("m7","m8","q4");
+
+    centerMatch("q1","q2","s1");
+    centerMatch("q3","q4","s2");
+
+    centerMatch("s1","s2","f1");
+
+}
+
+window.addEventListener("load",()=>{
+
+    loadScores();
+
+    setTimeout(centerBracket,300);
+
+});
