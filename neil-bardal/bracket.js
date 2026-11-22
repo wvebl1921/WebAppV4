@@ -273,3 +273,29 @@ window.addEventListener(
         calculate();
     }
 );
+function centerMatch(topId,bottomId,targetId){
+
+    const top = document.getElementById(topId);
+    const bottom = document.getElementById(bottomId);
+    const target = document.getElementById(targetId);
+
+    if(!top || !bottom || !target){
+        return;
+    }
+
+    const topCenter =
+        top.offsetTop + (top.offsetHeight / 2);
+
+    const bottomCenter =
+        bottom.offsetTop + (bottom.offsetHeight / 2);
+
+    const targetHeight =
+        target.offsetHeight;
+
+    target.style.position = "absolute";
+
+    target.style.top =
+        ((topCenter + bottomCenter) / 2) -
+        (targetHeight / 2) + "px";
+
+}
