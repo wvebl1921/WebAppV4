@@ -77,7 +77,7 @@ h1{
 }
 
 .match{
-    width:240px;
+    width:210px;
     background:white;
     margin-bottom:25px;
     border-radius:8px;
@@ -129,7 +129,7 @@ h1{
 }
 
 .champion-card{
-    width:220px;
+    width:180px;
     padding:25px;
     text-align:center;
     font-size:20px;
@@ -144,5 +144,5 @@ h1{
 }
 
 .champion-spacer{
-    height:180px;
+    height:220px;
 }
