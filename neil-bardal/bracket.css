@@ -73,8 +73,8 @@ h1{
 .bracket{
     display:flex;
 *   gap:40px;
-    justify-content:f*ex-start;
-    align-items:flex-sta*t;
+    justify-content:flex-start;
+    align-items:flex-start;
     min-width:max-content;
 }
 ``*
@@ -128,7 +128,7 @@ h1{
 
 #final{
     margin-top:620px;
-}*
+}
 
 /* ==========================
    MATCHES
@@ -224,16 +224,38 @@ h1{
 @media (max-width: 768px) {
 
     .bracket{
-        overflow-x:auto;
-        display:flex;
-        gap:15px;
-        justify-content:flex-start;
-        padding-bottom:20px;
-    }
+    display:flex;
+    gap:40px;
+    justify-content:flex-start;
+    align-items:flex-start;
+    min-width:max-content;
+}
 
     .round{
-        min-width:220px;
-    }
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    min-width:260px;
+}
+#round1{
+width:260px;
+}
+ 
+#round2{
+width:260px;
+}
+ 
+#quarters{
+width:260px;
+}
+ 
+#semis{
+width:260px;
+}
+ 
+#final{
+width:260px;
+}
 
     .match{
         width:220px;
