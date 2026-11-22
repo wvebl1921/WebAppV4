@@ -72,10 +72,12 @@ h1{
 
 .bracket{
     display:flex;
-    gap:20px;
-    justify-content:center;
-    align-items:flex-start;
+*   gap:40px;
+    justify-content:f*ex-start;
+    align-items:flex-sta*t;
+    min-width:max-content;
 }
+``*
 
 .round{
     display:flex;
