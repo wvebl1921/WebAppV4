@@ -193,21 +193,13 @@ h1{
     font-weight:bold;
 }
 /* Fine tune individual Quarter Finals */
+#quarters .match{
+    margin-bottom:140px;
+}
 
 #quarters .match:nth-child(2){
-    margin-top:35px;
+    transform:translateY(35px);
 }
-
-#quarters .match:nth-child(3){
-    margin-top:650px;
-}
-
-#quarters .match:nth-child(4){
-    margin-top:95px;
-}
-
-/* Fine tune Semi Final 2 */
-
 #semis .match:nth-child(2){
-    margin-top:80px;
+    transform:translateY(25px);
 }
