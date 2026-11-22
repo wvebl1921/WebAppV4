@@ -296,16 +296,29 @@ width:260px;
     /* Keep desktop positioning untouched */
 
     #finals{
-    position:relative;
-    min-height:1400px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#final{
+    width:280px;
 }
 
 .champion-section{
-    position:absolute;
-    left:0;
-    width:280px;
+    margin-top:250px;
     text-align:center;
-    top:1400px;
+    width:280px;
+}
+
+.champion-card{
+    width:280px;
+    margin:0 auto;
+    padding:20px;
+    background:#ffd700;
+    border:3px solid #cc9900;
+    border-radius:10px;
+    box-sizing:border-box;
 }
     #final{
         margin-top:520px;
