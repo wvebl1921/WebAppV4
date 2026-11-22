@@ -196,10 +196,20 @@ h1{
 #quarters .match{
     margin-bottom:140px;
 }
+/* Fine tune only the lower brackets */
 
 #quarters .match:nth-child(2){
-    transform:translateY(35px);
+    transform:translateY(30px);
 }
-#semis .match:nth-child(2){
+
+#quarters .match:nth-child(3){
     transform:translateY(25px);
+}
+
+#quarters .match:nth-child(4){
+    transform:translateY(50px);
+}
+
+#semis .match:nth-child(2){
+    transform:translateY(40px);
 }
