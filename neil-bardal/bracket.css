@@ -261,40 +261,6 @@ h1{
     }
 
 }
-
-    /* Keep desktop positioning untouched */
-
-    #finals{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-#final{
-    width:280px;
-}
-
-.champion-section{
-    margin-top:250px;
-    text-align:center;
-    width:280px;
-}
-
-.champion-card{
-    width:280px;
-    margin:0 auto;
-    padding:20px;
-    background:#ffd700;
-    border:3px solid #cc9900;
-    border-radius:10px;
-    box-sizing:border-box;
-}
-    #final{
-        margin-top:520px;
-    }
-
-}
-
 .phone{
     font-size:13px;
     font-weight:normal;
