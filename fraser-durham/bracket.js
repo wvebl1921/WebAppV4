@@ -74,14 +74,21 @@ return `
 <div class="match" id="${id}">
 <div class="race">Race to 500</div>
 
-<div class="player-wrap">
-
 <div class="player">
 <span id="${id}p1">
-    ${isRound1 ? p1.name : p1}
+${isRound1 ? p1.name : p1}
 </span>
 <input class="score" id="${id}s1" type="number">
 </div>
+
+${isRound1 ? `
+<div class="phone">
+<a href="tel:${p1.phone}">
+${p1.phone}
+</a>
+</div>
+` : ``}
+
 
 <input
     type="text"
@@ -96,10 +103,18 @@ return `
 
 <div class="player">
 <span id="${id}p2">
-    ${isRound1 ? p2.name : p2}
+${isRound1 ? p2.name : p2}
 </span>
 <input class="score" id="${id}s2" type="number">
 </div>
+
+${isRound1 ? `
+<div class="phone">
+<a href="tel:${p2.phone}">
+${p2.phone}
+</a>
+</div>
+` : ``}
 
 <input
     type="text"
