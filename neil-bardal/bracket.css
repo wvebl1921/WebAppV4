@@ -79,9 +79,14 @@ h1{
 .round{
     display:flex;
     flex-direction:column;
-    position:relative;
-    min-width:260px;
+    min-width:280px;
 }
+
+.round h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
 #round1,
 #round2,
 #quarters,
@@ -89,9 +94,29 @@ h1{
 #final{
     width:280px;
 }
-.round h2{
-    text-align:center;
+
+/* ==========================
+   ROUND SPACING
+========================== */
+
+#round1 .match{
     margin-bottom:15px;
+}
+
+#round2 .match{
+    margin-bottom:100px;
+}
+
+#quarters .match{
+    margin-bottom:255px;
+}
+
+#semis .match{
+    margin-bottom:575px;
+}
+
+#final{
+    margin-top:640px;
 }
 
 /* ROUND 1 */
