@@ -273,3 +273,17 @@ h1{
 
 }
 
+.phone{
+    font-size:11px;
+    color:#666;
+    padding:2px 6px 4px 6px;
+}
+
+.phone a{
+    color:#666;
+    text-decoration:none;
+}
+
+.phone a:hover{
+    text-decoration:underline;
+}
