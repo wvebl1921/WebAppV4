@@ -1,4 +1,6 @@
 const RACE_TO = 400;
+console.log("bracket.js loaded");
+console.log(PLAYERS);
 
 /* ==========================
    MATCH TEMPLATE
