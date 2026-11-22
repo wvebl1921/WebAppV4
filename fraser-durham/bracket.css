@@ -63,6 +63,13 @@ h1{
    BRACKET LAYOUT
 ========================== */
 
+.bracket-wrapper{
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:15px;
+}
+
 .bracket{
     display:flex;
     gap:20px;
