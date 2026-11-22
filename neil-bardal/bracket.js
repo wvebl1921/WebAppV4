@@ -328,6 +328,8 @@ function centerBracket(){
     centerMatch("q3","q4","s2");
 
     centerMatch("s1","s2","f1");
+
+    positionChampion();
 }
 window.addEventListener(
     "resize",
@@ -338,3 +340,21 @@ window.addEventListener(
         );
     }
 );
+function positionChampion(){
+
+    const finalMatch =
+        document.getElementById("f1");
+
+    const champion =
+        document.querySelector(".champion-section");
+
+    if(!finalMatch || !champion){
+        return;
+    }
+
+    champion.style.position = "absolute";
+
+    champion.style.top =
+        (finalMatch.offsetTop + 220) + "px";
+
+}
