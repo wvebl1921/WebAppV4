@@ -254,11 +254,6 @@ function calculate(){
 ).textContent =
     champion || "TBD";
 
-setTimeout(
-    centerBracket,
-    50
-);
-
 }
 document.addEventListener(
     "input",
@@ -270,10 +265,6 @@ window.addEventListener(
 
         calculate();
 
-        setTimeout(
-            centerBracket,
-            500
-        );
 
     }
 );
@@ -282,3 +273,22 @@ window.addEventListener(
     "resize",
     centerBracket
 );
+#round1 .match{
+    margin-bottom:15px;
+}
+
+#round2 .match{
+    margin-bottom:120px;
+}
+
+#quarters .match{
+    margin-bottom:280px;
+}
+
+#semis .match{
+    margin-bottom:620px;
+}
+
+#final{
+    margin-top:700px;
+}
