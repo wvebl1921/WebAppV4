@@ -62,22 +62,22 @@ h1{
 ========================== */
 
 .bracket-wrapper{
-    transform:scale(100);
+    transform:scale(0.75);
     transform-origin:top left;
-    width:140%;
+    width:100%;
+    overflow:hidden;
 }
 
 .bracket{
     display:flex;
-    gap:10px;
-    justify-content:center;
+    gap:8px;
+    justify-content:flex-start;
     align-items:flex-start;
-    flex-wrap:nowrap;
 }
 
 .round{
     position:relative;
-    min-width:280px;
+    min-width:250px;
     min-height:2500px;
 }
 
@@ -104,12 +104,6 @@ h1{
 
 #round1 .match{
     margin-bottom:15px;
-}
-
-#round2 .match,
-#quarters .match,
-#semis .match,
-#final .match{
 }
 
 /* ROUND 1 */
@@ -142,7 +136,7 @@ h1{
 ========================== */
 
 .match{
-    width:280px;
+    width:250px;
     background:white;
     border:1px solid #ccc;
     border-radius:8px;
@@ -207,7 +201,7 @@ h1{
 ========================== */
 
 .champion-section{
-    margin-top:10px;
+    margin-top:40px;
     text-align:center;
 }
 
