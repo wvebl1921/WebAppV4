@@ -7,7 +7,6 @@ function createMatch(id, p1, p2, isRound1 = false) {
 
     return `
     <div class="match" id="${id}">
-
         <div class="race">
             Race to ${RACE_TO}
         </div>
@@ -61,3 +60,16 @@ function createMatch(id, p1, p2, isRound1 = false) {
 /* ==========================
    BUILD BRACKET
 =======
+for (let i = 0; i < 8; i++) {
+
+    document.getElementById("round1")
+        .insertAdjacentHTML(
+            "beforeend",
+            createMatch(
+                `m${i + 1}`,
+                PLAYERS[i * 2],
+                PLAYERS[i * 2 + 1],
+                true
+            )
+        );
+}
