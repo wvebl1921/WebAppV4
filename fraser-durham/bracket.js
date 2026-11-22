@@ -74,6 +74,8 @@ return `
 <div class="match" id="${id}">
 <div class="race">Race to 500</div>
 
+<div class="player-wrap">
+
 <div class="player">
 <span id="${id}p1">
 ${isRound1 ? p1.name : p1}
