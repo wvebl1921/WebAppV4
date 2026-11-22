@@ -77,7 +77,9 @@ return `
 <div class="player-wrap">
 
 <div class="player">
-<span id="${id}p1">${p1}</span>
+<span id="${id}p1">
+    ${isRound1 ? p1.name : p1}
+</span>
 <input class="score" id="${id}s1" type="number">
 </div>
 
@@ -93,7 +95,9 @@ return `
 <div class="player-wrap">
 
 <div class="player">
-<span id="${id}p2">${p2}</span>
+<span id="${id}p2">
+    ${isRound1 ? p2.name : p2}
+</span>
 <input class="score" id="${id}s2" type="number">
 </div>
 
