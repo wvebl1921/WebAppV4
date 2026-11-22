@@ -195,19 +195,19 @@ h1{
 /* Fine tune individual Quarter Finals */
 
 #quarters .match:nth-child(2){
-    margin-top:40px;
+    margin-top:35px;
 }
 
 #quarters .match:nth-child(3){
-    margin-top:80px;
+    margin-top:650px;
 }
 
 #quarters .match:nth-child(4){
-    margin-top:120px;
+    margin-top:95px;
 }
 
 /* Fine tune Semi Final 2 */
 
 #semis .match:nth-child(2){
-    margin-top:100px;
+    margin-top:80px;
 }
