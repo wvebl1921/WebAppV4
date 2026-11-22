@@ -92,39 +92,41 @@ h1{
    ROUND 1
 ========================== */
 
-#round1{
-    width:260px;
-}
-
 #round1 .match{
     margin-bottom:15px;
 }
+
 /* ==========================
-   QUARTER FINALS
+   ROUND 2
 ========================== */
 
-#quarters{
-    width:260px;
+#round2 .match{
+    margin-bottom:110px;
 }
 
 /* ==========================
-   SEMI FINALS
+   QUARTERS
 ========================== */
 
-#semis{
-    width:260px;
+#quarters .match{
+    margin-bottom:260px;
+}
+
+/* ==========================
+   SEMIS
+========================== */
+
+#semis .match{
+    margin-bottom:560px;
 }
 
 /* ==========================
    FINAL
 ========================== */
 
-/* Manually centers Final bracket between Semi Final 1 & 2 */
-
 #final{
-    margin-top:660px;
-    
-}
+    margin-top:620px;
+}*
 
 /* ==========================
    MATCHES
