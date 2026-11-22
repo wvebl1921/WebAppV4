@@ -1,0 +1,274 @@
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    padding:20px;
+    background:#f5f5f5;
+}
+
+.container{
+    max-width:100%;
+}
+
+h1{
+    text-align:center;
+    color:#003366;
+}
+
+.subtitle{
+    text-align:center;
+    font-weight:bold;
+}
+
+.button-bar{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.button-bar button{
+    margin:5px;
+    padding:10px 20px;
+    background:#003366;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#progressContainer{
+    margin:20px auto;
+    max-width:800px;
+}
+
+#progressText{
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.progressOuter{
+    background:#ddd;
+    height:24px;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+#progressFill{
+    background:#28a745;
+    width:0%;
+    height:100%;
+    transition:.3s;
+}
+
+/* ==========================
+   BRACKET LAYOUT
+========================== */
+
+.bracket-wrapper{
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    padding-bottom:15px;
+}
+
+.bracket{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.round{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+}
+
+.round h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+/* ==========================
+   ROUND 1
+========================== */
+
+#round1{
+    width:260px;
+}
+
+#round1 .match{
+    margin-bottom:15px;
+}
+/* ==========================
+   QUARTER FINALS
+========================== */
+
+#quarters{
+    width:260px;
+}
+
+/* ==========================
+   SEMI FINALS
+========================== */
+
+#semis{
+    width:260px;
+}
+
+/* ==========================
+   FINAL
+========================== */
+
+/* Manually centers Final bracket between Semi Final 1 & 2 */
+
+#final{
+    margin-top:520px;
+    
+}
+
+/* ==========================
+   MATCHES
+========================== */
+
+.match{
+    width:260px;
+    background:white;
+    border:1px solid #ccc;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 1px 4px rgba(0,0,0,.15);
+}
+
+.match.complete{
+    border:2px solid #28a745;
+}
+
+.race{
+    background:#f1f1f1;
+    text-align:center;
+    font-size:12px;
+    font-weight:bold;
+    padding:6px;
+}
+
+.player-wrap{
+    padding:4px;
+    border-bottom:1px solid #eee;
+}
+
+.player{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:4px;
+}
+
+.player span{
+    flex:1;
+    white-space:nowrap;
+    font-size:14px;
+}
+
+.score{
+    width:45px;
+    flex-shrink:0;
+}
+
+.breaks{
+    width:95%;
+    margin-top:2px;
+    padding:3px;
+    font-size:10px;
+}
+
+/* ==========================
+   WINNER HIGHLIGHT
+========================== */
+
+.winner{
+    background:#d4edda;
+    font-weight:bold;
+}
+
+/* ==========================
+   CHAMPION
+========================== */
+
+.champion-section{
+    text-align:center;
+    margin-top:30px;
+}
+
+.champion-section h2{
+    margin-bottom:10px;
+}
+
+.champion-card{
+    width:180px;
+    margin:0 auto;
+    padding:20px;
+    background:#ffd700;
+    border:3px solid #cc9900;
+    border-radius:10px;
+    font-weight:bold;
+    text-align:center;
+}
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .bracket{
+        overflow-x:auto;
+        display:flex;
+        gap:15px;
+        justify-content:flex-start;
+        padding-bottom:20px;
+    }
+
+    .round{
+        min-width:220px;
+    }
+
+    .match{
+        width:220px;
+    }
+
+    .player span{
+        font-size:12px;
+    }
+
+    .score{
+        width:40px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .subtitle{
+        font-size:14px;
+    }
+
+    .button-bar button{
+        padding:8px 12px;
+        font-size:12px;
+    }
+
+    .champion-card{
+        width:150px;
+        padding:15px;
+    }
+
+    /* Keep desktop positioning untouched */
+
+    #finals{
+        margin-top:0;
+    }
+
+    #final{
+        margin-top:520px;
+    }
+
+}
