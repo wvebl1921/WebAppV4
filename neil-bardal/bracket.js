@@ -135,3 +135,85 @@ createMatch(
 document
 .getElementById("championName")
 .textContent = "TBD";
+
+function getWinner(id){
+
+    const p1 =
+        document.getElementById(id+"p1")
+        ?.textContent.trim();
+
+    const p2 =
+        document.getElementById(id+"p2")
+        ?.textContent.trim();
+
+    /* BYE ADVANCEMENT */
+
+    if(p1 === "BYE") return p2;
+
+    if(p2 === "BYE") return p1;
+
+    const s1 =
+        parseInt(
+            document.getElementById(id+"s1").value
+        ) || 0;
+
+    const s2 =
+        parseInt(
+            document.getElementById(id+"s2").value
+        ) || 0;
+
+    if(s1 >= 400 && s1 > s2)
+        return p1;
+
+    if(s2 >= 400 && s2 > s1)
+        return p2;
+
+    return null;
+}
+function setPlayer(id,pos,name){
+
+    const el =
+        document.getElementById(id+pos);
+
+    if(el && name){
+        el.textContent = name;
+    }
+
+}
+function calculate(){
+
+    setPlayer(
+        "r1",
+        "p1",
+        getWinner("m1")
+    );
+
+    setPlayer(
+        "r1",
+        "p2",
+        getWinner("m2")
+    );
+
+    setPlayer(
+        "r2",
+        "p1",
+        getWinner("m3")
+    );
+
+    setPlayer(
+        "r2",
+        "p2",
+        getWinner("m4")
+    );
+
+}
+document.addEventListener(
+    "input",
+    calculate
+);
+window.addEventListener(
+    "load",
+    ()=>{
+        calculate();
+    }
+);
