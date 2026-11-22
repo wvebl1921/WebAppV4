@@ -65,12 +65,12 @@ h1{
     transform:scale(0.75);
     transform-origin:top left;
     width:133%;
-    overflow:hidden;
+    overflow:visible;
 }
 
 .bracket{
     display:flex;
-    gap:8px;
+    gap:4px;
     justify-content:flex-start;
     align-items:flex-start;
 }
@@ -78,7 +78,12 @@ h1{
 .round{
     position:relative;
     min-width:250px;
-    min-height:2500px;
+    min-height:3200px;
+}
+
+.round h2{
+    text-align:center;
+    margin-bottom:15px;
 }
 
 #round1,
@@ -92,8 +97,6 @@ h1{
 /* ==========================
    ROUND SPACING
 ========================== */
-
-/* ROUND 1 */
 
 #round1 .match{
     margin-bottom:15px;
@@ -111,12 +114,15 @@ h1{
     margin-bottom:550px;
 }
 
-/* FINAL */
-
 #final{
-    margin-top:0px;
+    margin-top:0;
 }
 
+#finals{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
 
 /* ==========================
    MATCHES
@@ -188,55 +194,45 @@ h1{
 ========================== */
 
 .champion-section{
-    margin-top:40px;
+    margin-top:15px;
     text-align:center;
+    width:250px;
 }
 
 .champion-section h2{
-    margin-bottom:30px;
+    margin-bottom:10px;
 }
 
 .champion-card{
     width:250px;
     margin:0 auto;
-    padding:20px;
+    padding:15px;
     background:#ffd700;
     border:3px solid #cc9900;
     border-radius:10px;
-    font-weight:bold;
     text-align:center;
     box-sizing:border-box;
 }
-/* =====================================
-   MOBILE
-===================================== */
-
 @media (max-width:768px){
-}
+
+    .bracket-wrapper{
+        transform:none;
+        width:auto;
+        overflow-x:auto;
+    }
+
     .round{
-    display:flex;
-    flex-direction:column;
-    min-width:280px;
-}
-#round1{
-width:260px;
-}
- 
-#round2{
-width:260px;
-}
- 
-#quarters{
-width:260px;
-}
- 
-#semis{
-width:260px;
-}
- 
-#final{
-width:260px;
-}
+        min-width:220px;
+        min-height:auto;
+    }
+
+    #round1,
+    #round2,
+    #quarters,
+    #semis,
+    #final{
+        width:220px;
+    }
 
     .match{
         width:220px;
@@ -259,10 +255,12 @@ width:260px;
         font-size:12px;
     }
 
+    .champion-section,
     .champion-card{
-        width:150px;
-        padding:15px;
+        width:220px;
     }
+
+}
 
     /* Keep desktop positioning untouched */
 
