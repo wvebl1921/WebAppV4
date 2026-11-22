@@ -61,14 +61,15 @@ h1{
 }
 
 .bracket-wrapper{
-    overflow-x:auto;
+    overflow-x:hidden;
     padding-top:20px;
 }
 
 .bracket{
     display:flex;
-    gap:20px;
-    min-width:1300px;
+    gap:15px;
+    justify-content-center;
+    min-width:auto;
 }
 
 .round{
