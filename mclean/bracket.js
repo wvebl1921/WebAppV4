@@ -287,7 +287,26 @@ document.addEventListener(
 
 window.addEventListener(
     "load",
-    () => {
+    ()=>{
+
         calculate();
+
+        setTimeout(
+            centerBracket,
+            500
+        );
+
+    }
+);
+
+window.addEventListener(
+    "resize",
+    ()=>{
+
+        setTimeout(
+            centerBracket,
+            100
+        );
+
     }
 );
