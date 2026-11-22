@@ -104,7 +104,7 @@ h1{
 }
 
 .match{
-    width:210px;
+    width:260px;
     background:white;
     margin-bottom:15px;
     border-radius:8px;
@@ -147,7 +147,7 @@ h1{
 }
 
 .score{
-    width:40px;
+    width:45px;
 }
 
 .winner{
@@ -190,6 +190,4 @@ h1{
 .player span{
     flex:1;
     white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
 }
