@@ -340,7 +340,7 @@ function centerBracket(){
     centerMatch("s1","s2","f1");
 
 }
-}
+
 window.addEventListener("load",()=>{
 
     loadScores();
