@@ -260,6 +260,35 @@ function centerBracket(){
     centerMatch("q3","q4","s2");
 
     centerMatch("s1","s2","f1");
+
+    positionChampion();
+}
+
+function positionChampion(){
+
+    const finalMatch =
+        document.getElementById("f1");
+
+    const champion =
+        document.querySelector(".champion-section");
+
+    if(!finalMatch || !champion){
+        return;
+    }
+
+    champion.style.position = "absolute";
+
+    champion.style.top =
+        (finalMatch.offsetTop + 140) + "px";
+
+    champion.style.left =
+        (
+            finalMatch.offsetLeft -
+            (
+                (champion.offsetWidth -
+                finalMatch.offsetWidth) / 2
+            )
+        ) + "px";
 }
 
 /* ==========================
