@@ -83,11 +83,6 @@ h1{
     align-items:center;
 }
 
-.champion-section{
-    margin-top:30px;
-    text-align:center;
-}
-
 /* ==========================
    MATCHES
 ========================== */
@@ -158,9 +153,9 @@ h1{
 ========================== */
 
 .champion-section{
-    margin-top:5px;
-    text-align:center;
+    position:absolute;
     width:250px;
+    text-align:center;
 }
 
 .champion-section h2{
