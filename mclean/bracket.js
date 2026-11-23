@@ -279,7 +279,7 @@ function positionChampion(){
     champion.style.position = "absolute";
 
     champion.style.top =
-        (finalMatch.offsetTop + 140) + "px";
+        (finalMatch.offsetTop + 120) + "px";
 
     champion.style.left =
         (
