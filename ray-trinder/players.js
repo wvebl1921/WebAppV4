@@ -2,7 +2,7 @@ const PLAYERS = [
 
 {
     name:"Suzanne Irving",
-    handicap:"-50",
+    handicap:"50",
     phone:"204-794-6488"
 },
 {
@@ -13,7 +13,7 @@ const PLAYERS = [
 
 {
     name:"Alex Finlayson",
-    handicap:"-50",
+    handicap:"50",
     phone:"204-899-4166"
 },
 {
@@ -29,13 +29,13 @@ const PLAYERS = [
 },
 {
     name:"Wray Johnson",
-    handicap:"-45",
+    handicap:"45",
     phone:"204-781-5736"
 },
 
 {
     name:"Dale Stanley",
-    handicap:"-50",
+    handicap:"50",
     phone:"204-793-2895"
 },
 {
@@ -46,7 +46,7 @@ const PLAYERS = [
 
 {
     name:"Dave Leather",
-    handicap:"-45",
+    handicap:"45",
     phone:"204-232-2133"
 },
 {
@@ -57,7 +57,7 @@ const PLAYERS = [
 
 {
     name:"Duy Tran",
-    handicap:"-35",
+    handicap:"35",
     phone:"204-688-3328"
 },
 {
@@ -68,7 +68,7 @@ const PLAYERS = [
 
 {
     name:"Fred Fulcher",
-    handicap:"-50",
+    handicap:"50",
     phone:"204-227-5870"
 },
 {
@@ -79,7 +79,7 @@ const PLAYERS = [
 
 {
     name:"D.H. Dundas",
-    handicap:"-5",
+    handicap:"5",
     phone:"431-688-8736"
 },
 {
@@ -90,7 +90,7 @@ const PLAYERS = [
 
 {
     name:"Paul Post",
-    handicap:"-40",
+    handicap:"40",
     phone:"204-479-9451"
 },
 {
@@ -123,7 +123,7 @@ const PLAYERS = [
 
 {
     name:"Shelly Duffney",
-    handicap:"-15",
+    handicap:"15",
     phone:"204-227-8766"
 },
 {
@@ -134,18 +134,18 @@ const PLAYERS = [
 
 {
     name:"Samantha Morrisey",
-    handicap:"-50",
+    handicap:"50",
     phone:"204-979-2286"
 },
 {
     name:"Kelly Derksen",
-    handicap:"-5",
+    handicap:"5",
     phone:"204-471-8759"
 },
 
 {
     name:"Rob Guffei",
-    handicap:"-45",
+    handicap:"45",
     phone:"204-794-6343"
 },
 {
@@ -167,7 +167,7 @@ const PLAYERS = [
 
 {
     name:"Sebastian Cichosz",
-    handicap:"-35",
+    handicap:"35",
     phone:"204-297-0216"
 },
 {
