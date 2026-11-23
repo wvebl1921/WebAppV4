@@ -51,35 +51,38 @@ h1{
    BRACKET LAYOUT
 ========================== */
 
-.bracket-wrapper{
-    transform:scale(0.80);
-    transform-origin:top left;
-    width:125%;
-    overflow:visible;
-}
 .bracket{
     display:flex;
-    gap:4px;
-    justify-content:flex-start;
+    gap:20px;
     align-items:flex-start;
 }
 
 .round{
-    position:relative;
-    min-width:250px;
-    min-height:1800px;
-}
-
-.round h2{
-    text-align:center;
-    margin-bottom:15px;
-}
-
-#round1,
-#quarters,
-#semis,
-#final{
     width:250px;
+}
+
+#round1 .match{
+    margin-bottom:12px;
+}
+
+#quarters .match:first-child{
+    margin-top:95px;
+}
+
+#quarters .match{
+    margin-bottom:105px;
+}
+
+#semis .match:first-child{
+    margin-top:260px;
+}
+
+#semis .match{
+    margin-bottom:300px;
+}
+
+#final .match{
+    margin-top:520px;
 }
 
 /* ==========================
