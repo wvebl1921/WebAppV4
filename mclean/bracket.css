@@ -72,6 +72,20 @@ h1{
     min-height:1200px;
 }
 
+.round h2{
+    text-align:center;
+    width:100%;
+    margin-bottom:6px;
+}
+
+.round-date{
+    text-align:center;
+    width:100%;
+    font-size:12px;
+    color:#666;
+    margin-bottom:12px;
+}
+
 /* ==========================
    ROUND SPACING
 ========================== */
@@ -231,6 +245,7 @@ h1{
     font-weight:normal;
     padding:2px 4px 6px 4px;
     line-height:1.3;
+
 
 
 
