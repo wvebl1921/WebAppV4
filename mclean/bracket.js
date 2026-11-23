@@ -1,5 +1,25 @@
 const RACE_TO = 400;
+console.log("JS Started");
 
+console.log(
+    document.getElementById("round1")
+);
+
+console.log(
+    document.getElementById("quarters")
+);
+
+console.log(
+    document.getElementById("semis")
+);
+
+console.log(
+    document.getElementById("final")
+);
+
+console.log(
+    typeof PLAYERS
+);
 /* ==========================
    MATCH TEMPLATE
 ========================== */
@@ -61,6 +81,9 @@ function createMatch(id, p1, p2, isRound1 = false) {
 /* ==========================
    BUILD BRACKET
 ========================== */
+
+console.log("Bracket loaded");
+console.log(PLAYERS);
 
 for (let i = 0; i < 8; i++) {
 
@@ -201,8 +224,10 @@ function calculate() {
         getWinner("f1");
 
     document.getElementById("championName")
-    .textContent =
-    champion || "TBD";
+        .textContent =
+        champion || "TBD";
+
+}
 
 /* ==========================
    EVENTS
@@ -217,9 +242,3 @@ window.addEventListener(
     "load",
     calculate
 );
-   
-console.log("BUILDING BRACKET");
-
-for (let i = 0; i < 8; i++) {
-    console.log("Match", i + 1);
-}
