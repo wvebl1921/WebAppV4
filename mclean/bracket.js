@@ -204,11 +204,6 @@ function calculate() {
     .textContent =
     champion || "TBD";
 
-setTimeout(
-    centerBracket,
-    50
-);
-
 /* ==========================
    EVENTS
 ========================== */
@@ -222,24 +217,14 @@ window.addEventListener(
     "load",
     ()=>{
 
-        calculate();
-
-        setTimeout(
-            centerBracket,
-            500
-        );
-
-    }
+        calculate()
+{
 );
 
 window.addEventListener(
     "resize",
     ()=>{
 
-        setTimeout(
-            centerBracket,
-            100
-        );
 
     }
 );
