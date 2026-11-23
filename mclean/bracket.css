@@ -51,64 +51,41 @@ h1{
    BRACKET LAYOUT
 ========================== */
 
+.bracket-wrapper{
+    width:100%;
+    overflow-x:auto;
+}
+
 .bracket{
     display:flex;
     gap:20px;
+    justify-content:center;
     align-items:flex-start;
-}
-
-.round{
-    width:250px;
 }
 
 #round1 .match{
     margin-bottom:12px;
 }
 
-#quarters .match:first-child{
-    margin-top:95px;
-}
-
-#quarters .match{
-    margin-bottom:105px;
-}
-
-#semis .match:first-child{
-    margin-top:260px;
-}
-
-#semis .match{
-    margin-bottom:300px;
-}
-
-#final .match{
-    margin-top:520px;
+.round{
+    position:relative;
+    width:250px;
+    min-height:1800px;
 }
 
 /* ==========================
    ROUND SPACING
 ========================== */
 
-#round1 .match{
-    margin-bottom:15px;
-}
-
-#quarters .match{
-    margin-bottom:180px;
-}
-
-#semis .match{
-    margin-bottom:350px;
-}
-
-#final{
-    margin-top:0;
-}
-
 #finals{
     display:flex;
     flex-direction:column;
     align-items:center;
+}
+
+.champion-section{
+    margin-top:30px;
+    text-align:center;
 }
 
 /* ==========================
@@ -203,9 +180,8 @@ h1{
 @media (max-width:768px){
 
     .bracket-wrapper{
-        transform:none;
-        width:auto;
         overflow-x:auto;
+        width:100%;
     }
 
     .round{
@@ -236,11 +212,6 @@ h1{
         font-size:14px;
     }
 
-    .button-bar button{
-        padding:8px 12px;
-        font-size:12px;
-    }
-
     .champion-section,
     .champion-card{
         width:220px;
@@ -259,7 +230,4 @@ h1{
     font-weight:normal;
     padding:2px 4px 6px 4px;
     line-height:1.3;
-}
-#quarters .match{
-    margin-bottom:180px;
-}
+

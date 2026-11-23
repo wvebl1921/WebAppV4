@@ -1,25 +1,5 @@
 const RACE_TO = 400;
-console.log("JS Started");
 
-console.log(
-    document.getElementById("round1")
-);
-
-console.log(
-    document.getElementById("quarters")
-);
-
-console.log(
-    document.getElementById("semis")
-);
-
-console.log(
-    document.getElementById("final")
-);
-
-console.log(
-    typeof PLAYERS
-);
 /* ==========================
    MATCH TEMPLATE
 ========================== */
@@ -223,10 +203,62 @@ function calculate() {
     const champion =
         getWinner("f1");
 
-    document.getElementById("championName")
-        .textContent =
-        champion || "TBD";
+document.getElementById("championName")
+    .textContent =
+    champion || "TBD";
 
+setTimeout(
+    centerBracket,
+    25
+);
+
+/* ==========================
+   CENTERING
+========================== */
+
+function centerMatch(topId,bottomId,targetId){
+
+    const top =
+        document.getElementById(topId);
+
+    const bottom =
+        document.getElementById(bottomId);
+
+    const target =
+        document.getElementById(targetId);
+
+    if(!top || !bottom || !target){
+        return;
+    }
+
+    const topCenter =
+        top.offsetTop +
+        (top.offsetHeight / 2);
+
+    const bottomCenter =
+        bottom.offsetTop +
+        (bottom.offsetHeight / 2);
+
+    target.style.position = "absolute";
+
+    target.style.top =
+        (
+            ((topCenter + bottomCenter) / 2)
+            - (target.offsetHeight / 2)
+        ) + "px";
+}
+
+function centerBracket(){
+
+    centerMatch("m1","m2","q1");
+    centerMatch("m3","m4","q2");
+    centerMatch("m5","m6","q3");
+    centerMatch("m7","m8","q4");
+
+    centerMatch("q1","q2","s1");
+    centerMatch("q3","q4","s2");
+
+    centerMatch("s1","s2","f1");
 }
 
 /* ==========================
@@ -240,5 +272,26 @@ document.addEventListener(
 
 window.addEventListener(
     "load",
-    calculate
+    ()=>{
+
+        calculate();
+
+        setTimeout(
+            centerBracket,
+            500
+        );
+
+    }
+);
+
+window.addEventListener(
+    "resize",
+    ()=>{
+
+        setTimeout(
+            centerBracket,
+            100
+        );
+
+    }
 );
