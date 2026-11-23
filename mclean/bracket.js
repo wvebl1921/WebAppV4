@@ -201,9 +201,13 @@ function calculate() {
         getWinner("f1");
 
     document.getElementById("championName")
-        .textContent =
-        champion || "TBD";
-}
+    .textContent =
+    champion || "TBD";
+
+setTimeout(
+    centerBracket,
+    50
+);
 
 /* ==========================
    EVENTS
@@ -216,7 +220,28 @@ document.addEventListener(
 
 window.addEventListener(
     "load",
-    calculate
+    ()=>{
+
+        calculate();
+
+        setTimeout(
+            centerBracket,
+            500
+        );
+
+    }
+);
+
+window.addEventListener(
+    "resize",
+    ()=>{
+
+        setTimeout(
+            centerBracket,
+            100
+        );
+
+    }
 );
 console.log("BUILDING BRACKET");
 
