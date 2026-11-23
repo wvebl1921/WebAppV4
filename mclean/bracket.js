@@ -218,3 +218,8 @@ window.addEventListener(
     "load",
     calculate
 );
+console.log("BUILDING BRACKET");
+
+for (let i = 0; i < 8; i++) {
+    console.log("Match", i + 1);
+}
