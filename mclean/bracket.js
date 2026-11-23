@@ -211,6 +211,7 @@ setTimeout(
     centerBracket,
     25
 );
+}
 
 /* ==========================
    CENTERING
