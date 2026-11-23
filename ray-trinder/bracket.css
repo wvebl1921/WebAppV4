@@ -52,16 +52,17 @@ h1{
 ========================== */
 
 .bracket-wrapper{
-    transform:scale(0.80);
-    transform-origin:top left;
-    width:125%;
-    overflow:visible;
+    width:100%;
+    display:flex;
+    justify-content:center;
 }
+
 .bracket{
     display:flex;
-    gap:4px;
-    justify-content:flex-start;
+    gap:12px;
     align-items:flex-start;
+    width:fit-content;
+    margin:0 auto;
 }
 
 .round{
