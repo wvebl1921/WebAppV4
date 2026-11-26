@@ -217,18 +217,19 @@ h1{
         overflow-x:auto;
         overflow-y:hidden;
         -webkit-overflow-scrolling:touch;
+        padding-bottom:10px;
     }
 
     .bracket{
-        min-width:max-content;
         justify-content:flex-start;
+        min-width:max-content;
+        gap:15px;
     }
 
-}
-
     .round{
+        width:220px;
         min-width:220px;
-        min-height:auto;
+        min-height:1400px;
     }
 
     #round1,
