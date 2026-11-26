@@ -6,6 +6,7 @@ body{
 }
 .container{
     max-width:100%;
+    zoom:0.85;
 }
 h1{
     text-align:center;
@@ -59,7 +60,7 @@ h1{
 
 .bracket{
     display:flex;
-    gap:8px;
+    gap:12px;
     align-items:flex-start;
     width:fit-content;
     margin:0 auto;
@@ -67,7 +68,7 @@ h1{
 
 .round{
     position:relative;
-    min-width:230px;
+    min-width:250px;
     min-height:500px;
 }
 
@@ -125,7 +126,7 @@ h1{
 ========================== */
 
 .match{
-    width:2.0px;
+    width:250px;
     background:white;
     border:1px solid #ccc;
     border-radius:8px;
@@ -212,16 +213,11 @@ h1{
 @media (max-width:768px){
 
     .bracket-wrapper{
-    transform:none;
-    width:100%;
-    overflow-x:auto;
-    overflow-y:hidden;
-    -webkit-overflow-scrolling:touch;
-}
-    .bracket{
-    min-width:max-content;
-    justify-content:flex-start;
-}
+        transform:none;
+        width:auto;
+        overflow-x:auto;
+    }
+
     .round{
         min-width:220px;
         min-height:auto;
