@@ -6,7 +6,6 @@ body{
 }
 .container{
     max-width:100%;
-    zoom:0.85;
 }
 h1{
     text-align:center;
@@ -60,7 +59,7 @@ h1{
 
 .bracket{
     display:flex;
-    gap:12px;
+    gap:8px;
     align-items:flex-start;
     width:fit-content;
     margin:0 auto;
@@ -68,7 +67,7 @@ h1{
 
 .round{
     position:relative;
-    min-width:250px;
+    min-width:230px;
     min-height:500px;
 }
 
@@ -126,7 +125,7 @@ h1{
 ========================== */
 
 .match{
-    width:250px;
+    width:2.0px;
     background:white;
     border:1px solid #ccc;
     border-radius:8px;
