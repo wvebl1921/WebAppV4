@@ -156,7 +156,7 @@ const PLAYERS = [
 
 {
     name:"Murray Hoy",
-    handicap:"0",
+    handicap:"40",
     phone:"204-794-7774"
 },
 {
