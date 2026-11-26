@@ -213,11 +213,16 @@ h1{
 @media (max-width:768px){
 
     .bracket-wrapper{
-        transform:none;
-        width:auto;
-        overflow-x:auto;
-    }
-
+    transform:none;
+    width:100%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+}
+    .bracket{
+    min-width:max-content;
+    justify-content:flex-start;
+}
     .round{
         min-width:220px;
         min-height:auto;
